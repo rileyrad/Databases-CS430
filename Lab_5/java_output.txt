@@ -1,0 +1,19 @@
+URL: jdbc:mysql://faure/rileyr3
+Connection: com.mysql.cj.jdbc.ConnectionImpl@2d3fcdbd
+
+UPDATED RECORD: Book 96-42103-10800 was checked in by 2011 on 06/10/2016.
+ADDED RECORD: Book 96-42103-10011 was checked out by 2011 on 06/10/2016.
+ADDED RECORD: Book 96-42103-10006 was checked out by 2011 on 06/10/2016.
+UPDATED RECORD: Book 96-42103-10002 was checked in by 2012 on 06/10/2016.
+ERROR: Book 96-42103-10604 does not exist in library South Park.
+ADDED RECORD: Book 96-42103-10709 was checked out by 2012 on 06/10/2016.
+ERROR: Book 97-34506-10709 does not exist in library Main.
+ADDED RECORD: Book 96-42103-10022 was checked out by 1400 on 06/10/2016.
+UPDATED RECORD: Book 96-42103-10401 was checked in by 2020 on 06/11/2016.
+ERROR: Book 96-42103-10709 does not exist in library South Park.
+UPDATED RECORD: Book 96-42103-11003 was checked in by 2022 on 06/11/2016.
+UPDATED RECORD: Book 96-42103-10109 was checked in by 2022 on 06/11/2016.
+ADDED RECORD: Book 96-42103-10093 was checked out by 2022 on 06/11/2016.
+ERROR: Book 97-12413-10093 does not exist in library Main.
+ADDED RECORD: Book 96-42103-10093 was checked out by 1800 on 06/11/2016.
+ERROR: Book 96-42103-11709 does not exist in library Main.

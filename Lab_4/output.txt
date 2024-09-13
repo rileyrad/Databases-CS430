@@ -1,0 +1,268 @@
+MariaDB [rileyr3]> source query.sql;
++--------------+--------------------+--------------+------------+
+| library_name | street             | city         | state_code |
++--------------+--------------------+--------------+------------+
+| Main         | 42 South Main      | Fort Collins | CO         |
+| South Park   | 4000 South College | Fort Collins | CO         |
++--------------+--------------------+--------------+------------+
+2 rows in set (0.001 sec)
+
++--------------+----------------+--------------+-------------+-------+-------+
+| library_name | ISBN           | total_copies | free_copies | shelf | floor |
++--------------+----------------+--------------+-------------+-------+-------+
+| Main         | 96-42103-10001 |            3 |           3 |     1 |     1 |
+| South Park   | 96-42103-10001 |            1 |           1 |     8 |     3 |
+| Main         | 96-42103-10002 |            1 |           0 |     1 |     1 |
+| South Park   | 96-42103-10002 |            1 |           1 |     8 |     3 |
+| Main         | 96-42103-10003 |            1 |           1 |     1 |     1 |
+| South Park   | 96-42103-10003 |            1 |           1 |     8 |     3 |
+| Main         | 96-42103-10004 |            2 |           2 |     2 |     1 |
+| South Park   | 96-42103-10004 |            1 |           1 |     8 |     3 |
+| Main         | 96-42103-10005 |            1 |           1 |     2 |     1 |
+| South Park   | 96-42103-10005 |            1 |           1 |     8 |     3 |
+| South Park   | 96-42103-10006 |            1 |           1 |     8 |     3 |
+| Main         | 96-42103-10006 |            1 |           1 |     2 |     1 |
+| South Park   | 96-42103-10007 |            3 |           3 |     7 |     3 |
+| Main         | 96-42103-10007 |            2 |           2 |     3 |     1 |
+| Main         | 96-42103-10008 |            2 |           2 |     3 |     1 |
+| South Park   | 96-42103-10008 |            3 |           3 |     7 |     3 |
+| South Park   | 96-42103-10009 |            1 |           1 |     7 |     3 |
+| Main         | 96-42103-10009 |            2 |           2 |     3 |     1 |
+| South Park   | 96-42103-10011 |            1 |           1 |     7 |     3 |
+| Main         | 96-42103-10011 |            2 |           2 |     4 |     1 |
+| South Park   | 96-42103-10022 |            2 |           2 |     7 |     3 |
+| Main         | 96-42103-10022 |            3 |           3 |     4 |     1 |
+| South Park   | 96-42103-10033 |            3 |           3 |     7 |     3 |
+| Main         | 96-42103-10033 |            3 |           3 |     4 |     1 |
+| Main         | 96-42103-10034 |            1 |           1 |     5 |     2 |
+| Main         | 96-42103-10040 |            2 |           2 |     5 |     2 |
+| South Park   | 96-42103-10040 |            1 |           1 |     4 |     2 |
+| South Park   | 96-42103-10054 |            1 |           1 |     4 |     2 |
+| Main         | 96-42103-10054 |            2 |           2 |     5 |     2 |
+| Main         | 96-42103-10068 |            1 |           1 |     6 |     2 |
+| South Park   | 96-42103-10068 |            1 |           1 |     4 |     2 |
+| South Park   | 96-42103-10081 |            1 |           1 |     4 |     2 |
+| Main         | 96-42103-10081 |            1 |           1 |     6 |     2 |
+| Main         | 96-42103-10093 |            1 |           1 |     6 |     2 |
+| South Park   | 96-42103-10093 |            1 |           1 |     4 |     2 |
+| South Park   | 96-42103-10109 |            1 |           1 |     4 |     2 |
+| Main         | 96-42103-10109 |            1 |           1 |     6 |     2 |
+| South Park   | 96-42103-10206 |            1 |           1 |     4 |     2 |
+| Main         | 96-42103-10206 |            1 |           1 |     7 |     2 |
+| South Park   | 96-42103-10300 |            1 |           1 |     4 |     2 |
+| Main         | 96-42103-10300 |            2 |           2 |     7 |     2 |
+| South Park   | 96-42103-10401 |            1 |           1 |     3 |     2 |
+| Main         | 96-42103-10401 |            2 |           1 |     7 |     2 |
+| Main         | 96-42103-10502 |            1 |           1 |     7 |     2 |
+| South Park   | 96-42103-10502 |            1 |           1 |     3 |     2 |
+| Main         | 96-42103-10604 |            2 |           2 |     8 |     2 |
+| Main         | 96-42103-10709 |            3 |           3 |     8 |     2 |
+| Main         | 96-42103-10800 |            2 |           1 |     8 |     2 |
+| Main         | 96-42103-10907 |            7 |           7 |     8 |     2 |
+| South Park   | 96-42103-10907 |            7 |           7 |     3 |     2 |
+| Main         | 96-42103-11003 |            3 |           2 |     8 |     2 |
+| South Park   | 96-42103-11003 |            2 |           2 |     3 |     2 |
+| South Park   | 96-42103-11604 |            2 |           2 |     3 |     2 |
+| South Park   | 96-42103-11709 |            1 |           1 |     3 |     2 |
+| South Park   | 96-42103-11800 |            2 |           2 |     3 |     2 |
++--------------+----------------+--------------+-------------+-------+-------+
+55 rows in set (0.001 sec)
+
++------------------------------+--------------+--------------+
+| title                        | total_copies | library_name |
++------------------------------+--------------+--------------+
+| American Football            |            3 | Main         |
+| Challenging Puzzles          |            3 | Main         |
+| Cubs Win!                    |            7 | Main         |
+| Database Theory              |            2 | Main         |
+| Downton Abbey                |            2 | Main         |
+| Eating Healthy               |            2 | Main         |
+| Escape from Gilligans Island |            1 | Main         |
+| European Football            |            1 | Main         |
+| Fixing Computers             |            1 | Main         |
+| Gardening Tips               |            1 | Main         |
+| Green is Your Friend         |            2 | Main         |
+| Hal Finds a Home             |            1 | Main         |
+| How to Digitally Sign        |            2 | Main         |
+| How to Grow Cucumbers        |            2 | Main         |
+| How to Grow Tomatoes         |            3 | Main         |
+| Lacey Discovers Herself      |            2 | Main         |
+| Last Train to Clarksville    |            1 | Main         |
+| Missing Tomorrow             |            3 | Main         |
+| Mr. Ed                       |            1 | Main         |
+| Mr. Smith Goes to Washington |            1 | Main         |
+| Red Burn                     |            1 | Main         |
+| Sam Needs a Friend           |            2 | Main         |
+| Studying is Your Friend      |            1 | Main         |
+| Taks McGrill                 |            1 | Main         |
+| To Have and To Cherish       |            2 | Main         |
+| Too Many Cooks               |            3 | Main         |
+| Using the Library            |            2 | Main         |
+| Where to Start               |            2 | Main         |
++------------------------------+--------------+--------------+
+28 rows in set (0.001 sec)
+
++--------------+------------------+
+| library_name | number_of_titles |
++--------------+------------------+
+| Main         |               28 |
+| South Park   |               27 |
++--------------+------------------+
+2 rows in set (0.001 sec)
+
+Query OK, 0 rows affected (0.124 sec)
+
+Query OK, 0 rows affected (0.046 sec)
+
+Query OK, 0 rows affected (0.044 sec)
+
+Query OK, 0 rows affected (0.042 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.024 sec)
+
++------------------------------+-----------------------------------------------------+-------+--------------+
+| book_name                    | authors                                             | shelf | library_name |
++------------------------------+-----------------------------------------------------+-------+--------------+
+| American Football            | Julie Barnes                                        |     4 | Main         |
+| American Football            | Julie Barnes                                        |     4 | South Park   |
+| American Football            | Julie Barnes                                        |     7 | Main         |
+| American Football            | Julie Barnes                                        |     7 | South Park   |
+| Challenging Puzzles          | Roger Ramjet                                        |     4 | Main         |
+| Challenging Puzzles          | Roger Ramjet                                        |     4 | South Park   |
+| Challenging Puzzles          | Roger Ramjet                                        |     7 | Main         |
+| Challenging Puzzles          | Roger Ramjet                                        |     7 | South Park   |
+| Cubs Win!                    | Red Skelton, Barbara Wright                         |     8 | Main         |
+| Cubs Win!                    | Red Skelton, Barbara Wright                         |     8 | South Park   |
+| Cubs Win!                    | Red Skelton, Barbara Wright                         |     3 | Main         |
+| Cubs Win!                    | Red Skelton, Barbara Wright                         |     3 | South Park   |
+| Database Theory              | Dickey Betts, Waco Kid                              |     4 | Main         |
+| Database Theory              | Dickey Betts, Waco Kid                              |     4 | South Park   |
+| Database Theory              | Dickey Betts, Waco Kid                              |     7 | Main         |
+| Database Theory              | Dickey Betts, Waco Kid                              |     7 | South Park   |
+| Downton Abbey                | Robert Crawley                                      |     3 | Main         |
+| Downton Abbey                | Robert Crawley                                      |     3 | South Park   |
+| Downton Abbey                | Robert Crawley                                      |     7 | Main         |
+| Downton Abbey                | Robert Crawley                                      |     7 | South Park   |
+| Eating Healthy               | Dickey Betts, Waco Kid                              |     7 | Main         |
+| Eating Healthy               | Dickey Betts, Waco Kid                              |     7 | South Park   |
+| Eating Healthy               | Dickey Betts, Waco Kid                              |     4 | Main         |
+| Eating Healthy               | Dickey Betts, Waco Kid                              |     4 | South Park   |
+| Escape from Gilligans Island | Bobby Ewing, Mickey Hart                            |     6 | Main         |
+| Escape from Gilligans Island | Bobby Ewing, Mickey Hart                            |     6 | South Park   |
+| Escape from Gilligans Island | Bobby Ewing, Mickey Hart                            |     4 | Main         |
+| Escape from Gilligans Island | Bobby Ewing, Mickey Hart                            |     4 | South Park   |
+| European Football            | Julie Barnes                                        |     5 | Main         |
+| Fixing Computers             | Red Skelton                                         |     6 | Main         |
+| Fixing Computers             | Red Skelton                                         |     6 | South Park   |
+| Fixing Computers             | Red Skelton                                         |     4 | Main         |
+| Fixing Computers             | Red Skelton                                         |     4 | South Park   |
+| Gardening Tips               | Julie Barnes, Thomas Magnum                         |     7 | Main         |
+| Gardening Tips               | Julie Barnes, Thomas Magnum                         |     7 | South Park   |
+| Gardening Tips               | Julie Barnes, Thomas Magnum                         |     3 | Main         |
+| Gardening Tips               | Julie Barnes, Thomas Magnum                         |     3 | South Park   |
+| Green is Your Friend         | John Crichton, Barbara Wright                       |     8 | Main         |
+| Hal Finds a Home             | Mickey Hart                                         |     2 | Main         |
+| Hal Finds a Home             | Mickey Hart                                         |     2 | South Park   |
+| Hal Finds a Home             | Mickey Hart                                         |     8 | Main         |
+| Hal Finds a Home             | Mickey Hart                                         |     8 | South Park   |
+| How to Digitally Sign        | John Crichton, Red Skelton                          |     3 | Main         |
+| How to Digitally Sign        | John Crichton, Red Skelton                          |     3 | South Park   |
+| How to Digitally Sign        | John Crichton, Red Skelton                          |     7 | Main         |
+| How to Digitally Sign        | John Crichton, Red Skelton                          |     7 | South Park   |
+| How to Grow Cucumbers        | Bobby Ewing, Roger Ramjet                           |     7 | Main         |
+| How to Grow Cucumbers        | Bobby Ewing, Roger Ramjet                           |     7 | South Park   |
+| How to Grow Cucumbers        | Bobby Ewing, Roger Ramjet                           |     3 | Main         |
+| How to Grow Cucumbers        | Bobby Ewing, Roger Ramjet                           |     3 | South Park   |
+| How to Grow Tomatoes         | Bobby Ewing, Waco Kid                               |     1 | Main         |
+| How to Grow Tomatoes         | Bobby Ewing, Waco Kid                               |     1 | South Park   |
+| How to Grow Tomatoes         | Bobby Ewing, Waco Kid                               |     8 | Main         |
+| How to Grow Tomatoes         | Bobby Ewing, Waco Kid                               |     8 | South Park   |
+| Lacey Discovers Herself      | Julie Barnes, Thomas Magnum                         |     5 | Main         |
+| Lacey Discovers Herself      | Julie Barnes, Thomas Magnum                         |     5 | South Park   |
+| Lacey Discovers Herself      | Julie Barnes, Thomas Magnum                         |     4 | Main         |
+| Lacey Discovers Herself      | Julie Barnes, Thomas Magnum                         |     4 | South Park   |
+| Last Train to Clarksville    | Bobby Ewing                                         |     2 | Main         |
+| Last Train to Clarksville    | Bobby Ewing                                         |     2 | South Park   |
+| Last Train to Clarksville    | Bobby Ewing                                         |     8 | Main         |
+| Last Train to Clarksville    | Bobby Ewing                                         |     8 | South Park   |
+| Missing Tomorrow             | Dickey Betts, Mickey Hart, Perry Mason, Grace Slick |     8 | Main         |
+| Missing Tomorrow             | Dickey Betts, Mickey Hart, Perry Mason, Grace Slick |     8 | South Park   |
+| Missing Tomorrow             | Dickey Betts, Mickey Hart, Perry Mason, Grace Slick |     3 | Main         |
+| Missing Tomorrow             | Dickey Betts, Mickey Hart, Perry Mason, Grace Slick |     3 | South Park   |
+| Mr. Ed                       | Scottie Ferguson                                    |     6 | Main         |
+| Mr. Ed                       | Scottie Ferguson                                    |     6 | South Park   |
+| Mr. Ed                       | Scottie Ferguson                                    |     4 | Main         |
+| Mr. Ed                       | Scottie Ferguson                                    |     4 | South Park   |
+| Mr. Smith Goes to Washington | Red Skelton                                         |     1 | Main         |
+| Mr. Smith Goes to Washington | Red Skelton                                         |     1 | South Park   |
+| Mr. Smith Goes to Washington | Red Skelton                                         |     8 | Main         |
+| Mr. Smith Goes to Washington | Red Skelton                                         |     8 | South Park   |
+| Red Burn                     | Robert Crawley, Waco Kid                            |     6 | Main         |
+| Red Burn                     | Robert Crawley, Waco Kid                            |     6 | South Park   |
+| Red Burn                     | Robert Crawley, Waco Kid                            |     4 | Main         |
+| Red Burn                     | Robert Crawley, Waco Kid                            |     4 | South Park   |
+| Sam Needs a Friend           | Scottie Ferguson, Roger Thornhill, Barbara Wright   |     3 | Main         |
+| Sam Needs a Friend           | Scottie Ferguson, Roger Thornhill, Barbara Wright   |     3 | South Park   |
+| Sam Needs a Friend           | Scottie Ferguson, Roger Thornhill, Barbara Wright   |     7 | Main         |
+| Sam Needs a Friend           | Scottie Ferguson, Roger Thornhill, Barbara Wright   |     7 | South Park   |
+| Studying is Your Friend      | Thomas Magnum, Roger Ramjet                         |     1 | Main         |
+| Studying is Your Friend      | Thomas Magnum, Roger Ramjet                         |     1 | South Park   |
+| Studying is Your Friend      | Thomas Magnum, Roger Ramjet                         |     8 | Main         |
+| Studying is Your Friend      | Thomas Magnum, Roger Ramjet                         |     8 | South Park   |
+| Taks McGrill                 | Scottie Ferguson, Barbara Wright                    |     7 | Main         |
+| Taks McGrill                 | Scottie Ferguson, Barbara Wright                    |     7 | South Park   |
+| Taks McGrill                 | Scottie Ferguson, Barbara Wright                    |     4 | Main         |
+| Taks McGrill                 | Scottie Ferguson, Barbara Wright                    |     4 | South Park   |
+| To Have and To Cherish       | Robert Crawley, John Crichton, Roger Thornhill      |     2 | Main         |
+| To Have and To Cherish       | Robert Crawley, John Crichton, Roger Thornhill      |     2 | South Park   |
+| To Have and To Cherish       | Robert Crawley, John Crichton, Roger Thornhill      |     8 | Main         |
+| To Have and To Cherish       | Robert Crawley, John Crichton, Roger Thornhill      |     8 | South Park   |
+| Too Many Cooks               | Aeon Flux, Thomas Magnum                            |     8 | Main         |
+| Using the Library            | Thomas Magnum                                       |     8 | Main         |
+| Where to Start               | Roger Ramjet, Grace Slick                           |     5 | Main         |
+| Where to Start               | Roger Ramjet, Grace Slick                           |     5 | South Park   |
+| Where to Start               | Roger Ramjet, Grace Slick                           |     4 | Main         |
+| Where to Start               | Roger Ramjet, Grace Slick                           |     4 | South Park   |
++------------------------------+-----------------------------------------------------+-------+--------------+
+100 rows in set (0.005 sec)
+
+MariaDB [rileyr3]> source activity.sql;
+Query OK, 1 row affected (0.167 sec)
+
+Query OK, 1 row affected (0.452 sec)
+
+Query OK, 1 row affected (0.233 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+ERROR 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`rileyr3`.`author_phone`, CONSTRAINT `author_phone_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `author` (`author_id`))
+Query OK, 1 row affected (0.030 sec)
+
+Query OK, 1 row affected (0.024 sec)
+
+Query OK, 1 row affected (0.024 sec)
+
+ERROR 1062 (23000): Duplicate entry '96-42013-10510' for key 'PRIMARY'
+Query OK, 1 row affected (0.023 sec)
+
+Query OK, 1 row affected (0.075 sec)
+
+Query OK, 1 row affected (0.027 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`rileyr3`.`book`, CONSTRAINT `book_ibfk_1` FOREIGN KEY (`pub_id`) REFERENCES `publisher` (`pub_id`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`rileyr3`.`located_at`, CONSTRAINT `located_at_ibfk_2` FOREIGN KEY (`ISBN`) REFERENCES `book` (`ISBN`))
++--------+--------------------------+---------------------+
+| log_id | action                   | action_date         |
++--------+--------------------------+---------------------+
+|      1 | Add Book to Library      | 2024-06-11 16:07:08 |
+|      2 | Update Book Copies       | 2024-06-11 16:07:08 |
+|      3 | Add Author               | 2024-06-11 16:07:09 |
+|      4 | Add Book to Library      | 2024-06-11 16:07:09 |
+|      5 | Delete Book from Library | 2024-06-11 16:07:09 |
+|      6 | Update Book Copies       | 2024-06-11 16:07:09 |
++--------+--------------------------+---------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [rileyr3]> notee;
